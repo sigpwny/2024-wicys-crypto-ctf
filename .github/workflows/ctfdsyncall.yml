@@ -26,7 +26,6 @@ jobs:
       - name: sync chals to ctfd
         run: |
           shopt -s globstar
-          cd $GITHUB_WORKSPACE/../chals
           for i in ./**/challenge.yml; do 
             CHAL_DIR=$(dirname $i)
             echo "SYNCING CHAL TO CTFd: $CHAL_DIR"
