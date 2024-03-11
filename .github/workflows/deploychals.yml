@@ -1,0 +1,36 @@
+name: Deploy Chals
+on:
+  push:
+    branches: [ main ]
+jobs:
+  # test:
+  #   ...
+  deploy:
+    name: "Deploy chals to prod"
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    # needs: test
+    steps:
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$SSH_KEY" > ~/.ssh/prod.key
+          chmod 600 ~/.ssh/prod.key
+          cat >>~/.ssh/config <<END
+          Host prod
+            HostName $SSH_HOST
+            User $SSH_USER
+            IdentityFile ~/.ssh/prod.key
+            StrictHostKeyChecking no
+          END
+        env:
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_KEY: ${{ secrets.SSH_KEY }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+
+      - name: Check out the source
+        run: ssh prod 'cd fallctf-2023-chal-repo && git fetch && git reset --hard origin/main'
+
+      - name: Start the server
+        if: ${{ always() }}
+        run: ssh prod 'cd fallctf-2023-chal-repo && docker compose up -d --build --remove-orphans'

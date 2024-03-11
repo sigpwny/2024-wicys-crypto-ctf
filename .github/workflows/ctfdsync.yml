@@ -1,0 +1,46 @@
+name: ONPUSH - ctfd sync
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on pushes to the main branch that include changes to any files in the /chals dir
+  push:
+    branches: [ main ]
+    paths: [ 'chals/**' ]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - uses: actions/checkout@v2 # Checks-out repository under $GITHUB_WORKSPACE, so job can access it
+        with:
+          fetch-depth: 0 # fetch all history so we can check what files changed
+      - uses: actions/setup-python@v2 # install python
+      - name: Install ctfcli
+        run: |
+          python -m pip install --upgrade pip
+          pip install ctfcli
+      - name: init ctfcli
+        run: |
+          printf "$CTFD_URL\n$CTFD_TOKEN\ny" | ctf init
+        env:
+          CTFD_URL: ${{ secrets.CTFD_URL }}
+          CTFD_TOKEN: ${{ secrets.CTFD_TOKEN }}
+      - name: sync updated chals to ctfd
+        run: |
+          shopt -s globstar
+          cd $GITHUB_WORKSPACE/chals
+          echo "changed files: $(git diff --name-only ${{ github.event.before }} ${{ github.sha }})"
+          for i in ./**/challenge.yml; do 
+            CHAL_DIR=$(dirname $i)
+            git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -q "$CHAL_DIR"
+            if [ $? == 0 ]; then
+              echo "SYNCING CHAL TO CTFd: $CHAL_DIR"
+              { ctf challenge sync $CHAL_DIR; ctf challenge install $CHAL_DIR; } &
+            fi
+          done
+          wait
+        shell: bash --noprofile --norc {0}
