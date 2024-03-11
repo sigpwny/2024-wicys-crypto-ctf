@@ -29,8 +29,8 @@ jobs:
           SSH_HOST: ${{ secrets.SSH_HOST }}
 
       - name: Check out the source
-        run: ssh prod 'cd fallctf-2023-chal-repo && git fetch && git reset --hard origin/main'
+        run: ssh prod 'cd 2024-wicys-crypto-ctf && git fetch && git reset --hard origin/main'
 
       - name: Start the server
         if: ${{ always() }}
-        run: ssh prod 'cd fallctf-2023-chal-repo && docker compose up -d --build --remove-orphans'
+        run: ssh prod 'cd 2024-wicys-crypto-ctf && docker compose up -d --build --remove-orphans'
