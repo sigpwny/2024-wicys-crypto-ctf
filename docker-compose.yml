@@ -1,1 +1,7 @@
 version: '3'
+services:
+  overflow:
+    build: ./chals/crypto/test_chal
+    ports:
+      - "5000:1337"
+    restart: always
