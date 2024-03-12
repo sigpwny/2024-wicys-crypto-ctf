@@ -1,0 +1,37 @@
+name: "Safe Cracker"
+author: Sophia
+category: Crypto
+description: |-
+  RSA is a widely used asymmetric encryption algorithm that involves the use of a public and private key. 
+  The public key can be used to encrypt plaintext messages and is made widely available.
+  The private key is used by the recipient to decrypt the ciphertext and is kept a secret. 
+
+  How keys are generated: 
+  1. Two large prime numbers, p and q, are generated.
+  2. The public key consists of n, which calculated by multipling p and q, and e (which is typically set to 65537).
+  3. The private key contains the modulus n and d, a private exponent. 
+  4. The private exponent d is calculated as the modular multiplicative inverse of e modulo (p-1)x(q-1).
+  Read more here: https://en.wikipedia.org/wiki/RSA_(cryptosystem)
+
+  We found an encrypted safe combination. There are apparently many valuable items such as an invisibility cloak, an Amazon giftcard, salmon, and so much more...
+  Can you please help us recover the original combination? 
+  Tip: Once you have the correct pass code, submit it to safe.py to retrieve the flag.
+
+  **author**: Sophia
+value: 200
+type: dynamic
+tags:
+  - easy
+extra:
+  initial: 200
+  decay: 150
+  minimum: 125
+flags:
+  - sigpwny{why_does_the_safe_contain_fish}
+files:
+  - values.txt
+hints:
+  - We need to execute a certain type of a md5 hash collision attack.
+  - Look for a tool to pull off a "md5 same prefix hash collision" attack.
+  - Use [HashClash](https://github.com/cr-marcstevens/hashclash)
+state: hidden

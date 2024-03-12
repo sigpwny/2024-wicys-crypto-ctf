@@ -20,4 +20,5 @@ files:
   - wordlist.txt
 hints:
   - How can you perform a dictionary attack with a wordlist?
+  - The flag is the decrypted password.
 state: hidden

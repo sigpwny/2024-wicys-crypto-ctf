@@ -1,0 +1,26 @@
+name: "Seal Trouble II"
+author: Sophia
+category: Crypto
+description: |-
+  The seal has gotten smarter and decided to not hide his passphrase in a photo of himself. However, he forgot what it was. :(
+  He remembers that his passphrase is five characters and is comprised only of lowercase alphabetical letters. 
+  Can you help us recover his passphrase and use that to decrypt the message? 
+
+  **author**: Sophia
+value: 200
+type: dynamic
+tags:
+  - easy
+extra:
+  initial: 200
+  decay: 150
+  minimum: 125
+flags:
+  - sigpwny{thank_you_for_the_fish!!!}
+files:
+  - chal.py
+  - message.txt
+hints:
+  - How can you test the possible combinations of the passphrase?
+  - We know the flag starts with sigpwny. Can you use that knowledge to narrow down your search?
+state: hidden
