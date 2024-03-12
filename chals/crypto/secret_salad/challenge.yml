@@ -1,0 +1,27 @@
+name: "Secret Salad"
+author: Sophia
+category: Crypto
+description: |-
+  We have intercepted a crucial document via email. It appears to contain a list of usernames and their corresponding passwords for a website.
+  If it helps, we have a screenshot of a post that our person of interest made on a different site.
+
+  **author**: Sophia
+value: 100
+type: dynamic
+tags:
+  - easy
+extra:
+  initial: 100
+  decay: 75
+  minimum: 50
+flags:
+  - sigpwny{caesar_is_my_fav_salad}
+files:
+  - users.txt
+  - passwords.txt
+  - image.jpg
+hints:
+  - Can you use clues from the user's post to figure out what their other alias is?
+  - The password of a user lies on the same line as their username.
+  - Decrypt the password to get the flag - make sure to wrap it in sigpwny{}.
+state: hidden
