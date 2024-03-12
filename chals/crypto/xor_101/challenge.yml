@@ -1,0 +1,26 @@
+name: "XOR 101"
+author: Sophia
+category: Crypto
+description: |-
+  Breaking news: Seals have reached a new level of intelligence and can now create their own XOR challenges.
+  One left a comment on a photo of themself. Can you use that to discover the flag?
+
+  **author**: Sophia
+value: 150
+type: dynamic
+tags:
+  - easy
+extra:
+  initial: 150
+  decay: 125
+  minimum: 100
+flags:
+  - sigpwny{seals_like_x0r}
+files:
+  - message.txt
+  - chal.py
+  - seal1.png
+hints:
+  - Can you use information from the seal photo to decrypt the message?
+  - Exiftool is helpful.
+state: hidden
