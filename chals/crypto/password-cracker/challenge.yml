@@ -1,0 +1,23 @@
+name: "Password Cracking"
+author: Sophia
+category: Crypto
+description: |-
+  We successfully obtained a SHA-256 hash of a password...all we need to do now is to decrypt it.
+
+  **author**: Sophia
+value: 150
+type: dynamic
+tags:
+  - easy
+extra:
+  initial: 150
+  decay: 125
+  minimum: 100
+flags:
+  - sigpwny{code_br3aker_!}
+files:
+  - hash.txt
+  - wordlist.txt
+hints:
+  - How can you perform a dictionary attack with a wordlist?
+state: hidden
