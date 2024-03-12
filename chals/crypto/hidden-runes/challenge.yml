@@ -1,0 +1,25 @@
+name: "Hidden Runes"
+author: Sophia
+category: Crypto
+description: |-
+  A capsule concealing a mysterious message has been discovered on the Main Quad.
+  You heard that those who decipher the message get to be featured in the Daily Illini!
+  Can you decrypt the following text? 
+
+  **author**: Sophia
+value: 150
+type: dynamic
+tags:
+  - easy
+extra:
+  initial: 150
+  decay: 125
+  minimum: 100
+flags:
+  - sigpwny{alphabets_are_very_fun}
+files:
+  - mysterious_message.txt
+hints:
+  - Substitution cipher with random characters
+  - Use context clues to figure out what common words translate to.
+state: hidden

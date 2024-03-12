@@ -1,0 +1,32 @@
+This is a substitution cipher.
+♅♇♈♊♏♃♂ comes right before the set of braces {}, so we know that must stand for sigpwny. 
+Each character matches to a letter in the english alphabet. 
+We can spot words like "I", "is", and "the" and use the mappings to decipher the message.
+
+Key:
+☉ = h
+☾ = e
+♄ = l
+☿ = o
+♀ = m
+♂ = y
+♃ = n
+♆ = a
+♇ = I
+♅ = s
+☽ = v
+♈ = g 
+♉ = o
+♊ = p 
+♋ = c
+♌ = d 
+♍ = b 
+♎ = t 
+♏ = w 
+♐ = r 
+♑ = f 
+♒ = u
+
+Decoded message: 
+Hello! My name is Mango. I love space and alphabets. I want to go to space one day. 
+In the mean time, here is the flag: sigpwny{alphabets_are_very_fun}
