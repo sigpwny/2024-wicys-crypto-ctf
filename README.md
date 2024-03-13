@@ -1,4 +1,4 @@
-# Fall CTF 2023 Challenge Repo
+# WiCyS 2024 Cryto CTF Challenge Repo
 
 Put your challenge in chals/[category]/chalname
 
