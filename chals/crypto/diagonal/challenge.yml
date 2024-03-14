@@ -20,6 +20,7 @@ flags:
   - sigpwny{mult1d1m3n510n4l}
 files:
   - public.py
+  - starter.py
 hints:
   - Play with some matrices, see how the exponent affects the entries, get some equations going
 state: hidden

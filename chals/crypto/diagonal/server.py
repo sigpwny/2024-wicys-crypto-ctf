@@ -1,7 +1,10 @@
 import numpy as np
+import signal
+import time
 import random
 
 FLAG = "sigpwny{mult1d1m3n510n4l}"
+
 
 def inputs():
     print("[D] Define a 3 x 3 Integer Matrix M")
@@ -18,9 +21,21 @@ def inputs():
                 return None
     return M
 
+def handler(signum, frame):
+    raise Exception("[D] Matrix Mult took too long, try something simple")
+
 def fun(M_, d):
     M = np.matrix(M_, dtype='object')
-    M = M**d
+
+    signal.signal(signal.SIGALRM, handler)
+    signal.alarm(5) # raise alarm after 5 seconds
+    try:
+        M = M**d
+    except:
+        print("[D] Matrix Mult took too long, try something simple")
+        return None
+
+    signal.alarm(0) # disable the alarm
 
     # [\\\]
     # [ \\]
@@ -37,6 +52,9 @@ def main():
         return
 
     res = fun(M, secret)
+    if res == None:
+        print("[D] You tried something weird...")
+        return
     print()
     print(f"[D] Have fun: {res}")
     print()
