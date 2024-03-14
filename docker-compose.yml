@@ -1,7 +1,7 @@
 version: '3'
 services:
-  overflow:
-    build: ./chals/crypto/test_chal
+  diagonal:
+    build: ./chals/crypto/diagonal
     ports:
-      - "5000:1337"
+      - "5001:1337"
     restart: always
