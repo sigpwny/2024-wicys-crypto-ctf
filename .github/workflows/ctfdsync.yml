@@ -32,6 +32,7 @@ jobs:
       - name: sync updated chals to ctfd
         run: |
           shopt -s globstar
+          cd $GITHUB_WORKSPACE/../chals
           echo "changed files: $(git diff --name-only ${{ github.event.before }} ${{ github.sha }})"
           for i in ./**/challenge.yml; do 
             CHAL_DIR=$(dirname $i)
