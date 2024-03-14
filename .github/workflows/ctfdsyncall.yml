@@ -26,14 +26,13 @@ jobs:
       - name: sync chals to ctfd
         run: |
           shopt -s globstar
-          cd $GITHUB_WORKSPACE/../chals
           for i in ./**/challenge.yml; do 
             CHAL_DIR=$(dirname $i)
             echo "SYNCING CHAL TO CTFd: $CHAL_DIR"
             ctf challenge sync $CHAL_DIR
             if [ $? == 1 ]; then
               echo "::warning::Error syncing chal $CHAL_DIR"
+              ctf challenge install $CHAL_DIR
             fi
-            ctf challenge install $CHAL_DIR
           done
         shell: bash --noprofile --norc {0}
