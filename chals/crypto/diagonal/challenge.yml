@@ -1,0 +1,25 @@
+name: "Diagonal"
+author: Anakin
+category: Crypto
+description: |-
+  We've tried and failed with horizontal and vertical integration.
+  Hopefully something more angular will catch on.
+
+  `nc chal.fallctf.sigpwny.com 6001`
+
+  **author**: Pete
+value: 500
+type: dynamic
+tags:
+  - medium
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+flags:
+  - sigpwny{mult1d1m3n510n4l}
+files:
+  - public.py
+hints:
+  - Play with some matrices, see how the exponent affects the entries, get some equations going
+state: hidden
