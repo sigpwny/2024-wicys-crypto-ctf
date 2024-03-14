@@ -4,7 +4,6 @@ category: Crypto
 description: |-
   A capsule concealing a mysterious message has been discovered on the Main Quad.
   You heard that those who decipher the message get to be featured in the Daily Illini!
-  Can you decrypt the following text? 
 
   **author**: Sophia
 value: 150
@@ -13,13 +12,13 @@ tags:
   - easy
 extra:
   initial: 150
-  decay: 125
-  minimum: 100
+  decay: 50
+  minimum: 50
 flags:
-  - sigpwny{alphabets_are_very_fun}
+  - sigpwny{alphabets_and_space_and_mars_are_very_fun}
 files:
   - mysterious_message.txt
 hints:
-  - Substitution cipher with random characters
+  - Substitution cipher with random characters.
   - Use context clues to figure out what common words translate to.
 state: hidden

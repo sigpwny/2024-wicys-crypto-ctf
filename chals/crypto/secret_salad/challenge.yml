@@ -13,8 +13,8 @@ tags:
   - easy
 extra:
   initial: 100
-  decay: 75
-  minimum: 50
+  decay: 50
+  minimum: 30
 flags:
   - sigpwny{caesar_is_my_fav_salad}
 files:
@@ -22,7 +22,6 @@ files:
   - passwords.txt
   - image.png
 hints:
-  - Can you use clues from the user's post to figure out what their other alias is?
   - The password of a user lies on the same line as their username.
   - Decrypt the password to get the flag - make sure to wrap it in sigpwny{}.
 state: hidden

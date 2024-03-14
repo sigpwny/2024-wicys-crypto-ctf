@@ -7,14 +7,14 @@ description: |-
   Can you help us recover his passphrase and use that to decrypt the message? 
 
   **author**: Sophia
-value: 200
+value: 150
 type: dynamic
 tags:
   - easy
 extra:
-  initial: 200
-  decay: 150
-  minimum: 125
+  initial: 150
+  decay: 50
+  minimum: 50
 flags:
   - sigpwny{thank_you_for_the_fish!!!}
 files:

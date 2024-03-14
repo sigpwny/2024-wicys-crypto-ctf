@@ -11,8 +11,8 @@ tags:
   - easy
 extra:
   initial: 150
-  decay: 125
-  minimum: 100
+  decay: 50
+  minimum: 50
 flags:
   - sigpwny{code_br3aker_!}
 files:
