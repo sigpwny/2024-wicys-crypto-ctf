@@ -8,12 +8,12 @@ description: |-
   `nc chal.cryptoctf.sigpwny.com 7001`
 
   **author**: Sophia
-value: 150
+value: 200
 type: dynamic
 tags:
   - easy
 extra:
-  initial: 150
+  initial: 200
   decay: 50
   minimum: 50
 flags:

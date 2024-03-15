@@ -16,18 +16,17 @@ description: |-
   TODO: some description
 
   **author**: Sophia
-value: 250
+value: 200
 type: dynamic
 tags: 
   - easy
 extra:
-  initial: 250
+  initial: 200
   decay: 50
   minimum: 50
 flags:
   - sigpwny{rsA_FtW:P}
 files:
   - chal.py
-  - gen.py
 hints:
   - I noticed a [library](https://pycryptodome.readthedocs.io/en/latest/src/public_key/rsa.html) included in the source code...
