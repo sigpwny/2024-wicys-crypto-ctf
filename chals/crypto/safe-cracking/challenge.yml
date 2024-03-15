@@ -1,0 +1,24 @@
+name: "Safe Cracking"
+author: Sophia
+category: Crypto
+description: |-
+  We found a magical safe. There are apparently many valuable items in it such as an invisibility cloak, an Amazon giftcard, and more!
+  Can you please help us recover the original combination? 
+
+  `nc chal.cryptoctf.sigpwny.com 7001`
+
+  **author**: Sophia
+value: 150
+type: dynamic
+tags:
+  - easy
+extra:
+  initial: 150
+  decay: 50
+  minimum: 50
+flags:
+  - sigpwny{is_this_r3@lly_the_m0st_s3cure_s@f3_3ver?}
+files:
+hints:
+  - Look up how to perform a Diffie-Hellman key exchange. 
+state: hidden
