@@ -14,7 +14,7 @@ extra:
   decay: 50
   minimum: 50
 flags:
-  - sigpwny{code_br3aker_!}
+  - sigpwny{cr@ckitnow!26}
 files:
   - hash.txt
   - wordlist.txt

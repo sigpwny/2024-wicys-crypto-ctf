@@ -6,7 +6,7 @@
 
 p = 3042161
 b = 73
-shared_secret = 605790
+shared_secret = 2417097
 
 def find_base(p, b, shared_secret):
     for base in range(1, p):

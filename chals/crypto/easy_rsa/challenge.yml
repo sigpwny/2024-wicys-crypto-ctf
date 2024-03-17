@@ -13,7 +13,7 @@ description: |-
   4. The private exponent d is calculated as the modular multiplicative inverse of e modulo (p-1)x(q-1).
   Read more [here](https://en.wikipedia.org/wiki/RSA_(cryptosystem)).
 
-  TODO: some description
+  You're given n and e - can you use that information to decrypt c?
 
   **author**: Sophia
 value: 200

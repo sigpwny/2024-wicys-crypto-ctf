@@ -29,6 +29,6 @@ Key:
 
 Decoded message: 
 Hello! My name is Mango. I love space and alphabets. I want to go to space one day.
-My favorite planets are Mars, Saturn, and Pluto. Is Pluto a planet? I am not sure. 
-I also want to live in space one day. If I had to choose a planet to live on, it would be Mars.
+My favorite planets are Mars, Saturn, and Pluto. Is Pluto a planet? I'm not sure. 
+I want to live in space one day. If I had to choose a planet to live on, it would be Mars.
 sigpwny{alphabets_and_space_and_mars_are_very_fun}
