@@ -8,7 +8,7 @@ def main():
     conn.recvline() # [D] Elliptic Curve Cryptography is so powerful, that I'll let you choose the curve!
     conn.recvline() # [D] I'm using a standard curve of the shape y^2 = x^3 + ax + b (mod p)
 
-    prime = getPrime(10)
+    prime = getPrime(128)
     conn.sendline(str(prime).encode())
     conn.sendline(b'0')
     conn.sendline(b'0')
