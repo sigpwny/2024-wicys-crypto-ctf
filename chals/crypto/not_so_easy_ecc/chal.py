@@ -16,7 +16,7 @@ def die(*args):
     exit(1)
 
 def main():
-    nbits = 10
+    nbits = 128
     print("Elliptic Curve Cryptography is so powerful, that I'll let you choose the curve!")
     print("I'm using a standard curve of the shape y^2 = x^3 + ax + b (mod p)")
 
