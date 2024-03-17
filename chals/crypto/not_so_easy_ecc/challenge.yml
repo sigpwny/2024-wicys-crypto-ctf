@@ -1,0 +1,21 @@
+name: "Not so Easy ECC"
+author: Hassam
+category: Crypto
+description: |-
+  I just learned about this cool new encryption scheme called Elliptic Curve Cryptography. It's so powerful, it doesn't matter how I use it!
+
+  **author**: Hassam
+value: 300
+type: dynamic
+tags:
+  - medium
+flags:
+  - sigpwny{okay_next_time_ill_make_the_curve}
+files:
+  - chal.py
+  - mini_ecdsa.py
+  - tonelli_shanks.py
+hints:
+  - You have full control over the curve parameters, can we use that to our advantage?
+  - What does a bad curve look like? 
+state: hidden
