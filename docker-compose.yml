@@ -5,3 +5,8 @@ services:
     ports:
       - "5001:1337"
     restart: always
+  not_so_easy_ecc:
+    build: ./chals/crypto/not_so_easy_ecc
+    ports:
+      - "5002:1337"
+    restart: always
