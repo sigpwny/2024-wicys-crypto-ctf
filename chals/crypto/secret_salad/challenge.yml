@@ -24,4 +24,5 @@ files:
 hints:
   - The password of a user lies on the same line as their username.
   - Decrypt the password to get the flag - make sure to wrap it in sigpwny{}.
-state: hidden
+  - Sometimes I add a classic special dressing to my salads!
+state: visible
