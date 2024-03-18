@@ -10,3 +10,8 @@ services:
     ports:
       - "5002:1337"
     restart: always
+  safe_cracking:
+    build: ./chals/crypto/safe_cracking
+    ports:
+      - "7001:1337"
+    restart: always
