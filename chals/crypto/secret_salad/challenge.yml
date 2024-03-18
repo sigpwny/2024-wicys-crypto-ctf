@@ -23,6 +23,7 @@ files:
   - image.png
 hints:
   - The password of a user lies on the same line as their username.
+  - The username of the person might be related to what they are viewing...
   - Decrypt the password to get the flag - make sure to wrap it in sigpwny{}.
   - Sometimes I add a classic special dressing to my salads!
 state: visible
