@@ -10,6 +10,7 @@ WORKDIR /chal
 COPY chal.py ./
 COPY mini_ecdsa.py ./
 COPY tonelli_shanks.py ./
+COPY flag.py ./
 RUN chmod 555 chal.py
 USER chal
 
