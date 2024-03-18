@@ -19,6 +19,7 @@ extra:
 flags:
   - sigpwny{is_this_r3@lly_the_m0st_s3cure_s@f3_3ver?}
 files:
+  - note.txt
 hints:
   - Look up how to perform a Diffie-Hellman key exchange. 
 state: hidden

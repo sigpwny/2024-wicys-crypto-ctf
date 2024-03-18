@@ -1,0 +1,11 @@
+Hints to help me remember the combination to my safe (since I always forget it):
+Note that the answer to each problem corresponds to one part of the safe combination.
+
+1. Anna and Beatrice perform a Diffie-Hellman key exchange where p = 17 and g = 3. 
+   Privately, Anna selects 5 and Beatrice chooses 11. What's their shared secret key?
+2. The two perform another key exchange. Now, p = 157 and g = 2. 
+   Anna's new private key is 67, while Beatrice's public key is 73. What is Anna's public key?
+3. Anna forgot her private key and wants to solve for it. We know the following:
+   a. Their shared secret key, s, is equal to 2417097.
+   b. The values of p and g are 3042161 and 5, respectively.
+   c. Beatrice's private key is 73.
