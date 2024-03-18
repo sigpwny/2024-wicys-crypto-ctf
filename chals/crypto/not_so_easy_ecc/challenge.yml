@@ -5,8 +5,12 @@ description: |-
   I just learned about this cool new encryption scheme called Elliptic Curve Cryptography. It's so powerful, it doesn't matter how I use it!
 
   **author**: Hassam
-value: 300
+value: 500
 type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
 tags:
   - medium
 flags:
