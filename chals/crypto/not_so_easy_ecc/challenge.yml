@@ -4,6 +4,8 @@ category: Crypto
 description: |-
   I just learned about this cool new encryption scheme called Elliptic Curve Cryptography. It's so powerful, it doesn't matter how I use it!
 
+  `nc chal.cryptoctf.sigpwny.com 5002`
+
   **author**: Hassam
 value: 500
 type: dynamic

@@ -8,6 +8,8 @@ RUN mkdir -p /chal
 WORKDIR /chal
 
 COPY chal.py ./
+COPY mini_ecdsa.py ./
+COPY tonelli_shanks.py ./
 RUN chmod 555 chal.py
 USER chal
 
