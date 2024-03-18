@@ -22,4 +22,4 @@ files:
 hints:
   - You have full control over the curve parameters, can we use that to our advantage?
   - What does a bad curve look like? 
-state: hidden
+state: visible

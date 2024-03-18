@@ -21,4 +21,4 @@ files:
 hints:
   - Substitution cipher with random characters.
   - Use context clues to figure out what common words translate to.
-state: hidden
+state: visible

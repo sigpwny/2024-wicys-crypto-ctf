@@ -23,4 +23,4 @@ files:
   - starter.py
 hints:
   - Play with some matrices, see how the exponent affects the entries, get some equations going
-state: hidden
+state: visible

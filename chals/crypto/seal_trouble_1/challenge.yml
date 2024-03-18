@@ -23,4 +23,4 @@ files:
 hints:
   - Can you use information from the seal photo to decrypt the message?
   - Exiftool is helpful.
-state: hidden
+state: visible

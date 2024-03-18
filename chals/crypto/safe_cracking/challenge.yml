@@ -22,4 +22,4 @@ files:
   - note.txt
 hints:
   - Look up how to perform a Diffie-Hellman key exchange. 
-state: hidden
+state: visible

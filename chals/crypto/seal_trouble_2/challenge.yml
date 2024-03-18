@@ -23,4 +23,4 @@ files:
 hints:
   - How can you test the possible combinations of the passphrase?
   - We know the flag starts with sigpwny. Can you use that knowledge to narrow down your search?
-state: hidden
+state: visible
