@@ -23,5 +23,6 @@ files:
   - tonelli_shanks.py
 hints:
   - You have full control over the curve parameters, can we use that to our advantage?
-  - What does a bad curve look like? 
+  - What does a bad curve look like?
+  - Try setting 'nbits' to a small value (e.g. 5) so you can work out the math by hand.
 state: visible
