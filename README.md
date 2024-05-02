@@ -1,4 +1,4 @@
-# WiCyS 2024 Cryto CTF Challenge Repo
+# WiCyS 2024 Crypto CTF Challenge Repo
 
 Put your challenge in chals/[category]/chalname
 
